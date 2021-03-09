@@ -1,6 +1,46 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 3em;
+}
+
+.bloc_page {
+  width: 90%;
+  margin: auto;
+}
+
 h1 {
   font-family: "Shrikhand", cursive;
-  font-size: 10em;
+  text-align: center;
+}
+
+#h2_menu {
+  font-family: "Shrikhand", cursive;
+}
+
+footer h2 {
+  font-family: "Shrikhand", cursive;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 1.5em;
+}
+footer ul {
+  list-style-type: none;
+  line-height: 1.5em;
+}
+footer a {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
