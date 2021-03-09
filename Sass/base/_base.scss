@@ -1,0 +1,31 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: $font-family;
+    font-size: 3em;
+}
+
+.bloc_page{
+    width: 90%;
+    margin: auto;
+}
+
+h1{
+    font-family: $titles-font-family;
+    text-align: center;
+}
+
+#h2_menu{
+    font-family: $titles-font-family;
+}
+
+footer h2{
+    font-family: $titles-font-family;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
