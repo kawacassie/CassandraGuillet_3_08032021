@@ -42,6 +42,7 @@ nav {
 .article_index {
   width: 95%;
   height: 20%;
+  position: relative;
 }
 
 .photo {
@@ -56,7 +57,14 @@ nav {
 }
 
 .nouveau {
-  color: #99e2d0;
+  position: absolute;
+  top: 30px;
+  left: 600px;
+  width: 18%;
+  padding: 0.5em;
+  font-weight: bold;
+  color: #278870;
+  background-color: #99e2d0;
 }
 
 .legende {
@@ -69,10 +77,11 @@ nav {
 
 .coeur {
   align-self: flex-end;
+  font-size: 1.5em;
 }
 
 footer {
-  background-color: black;
+  background-color: #10392f;
   color: white;
   padding: 1.5em;
 }

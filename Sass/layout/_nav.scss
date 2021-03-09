@@ -10,6 +10,7 @@ nav{
 .article_index{
     width: 95%;
     height: 20%;
+    position: relative;
 }
 
 .photo{
@@ -24,7 +25,14 @@ nav{
 }
 
 .nouveau{
-    color: $tertiary-color;
+    position: absolute;
+    top: 30px;
+    left: 600px;
+    width: 18%;
+    padding: 0.5em;
+    font-weight: bold;
+    color: darken($tertiary-color, 40%);
+    background-color: $tertiary-color;
 }
 
 .legende{
@@ -37,4 +45,5 @@ nav{
 
 .coeur{
     align-self: flex-end;
+    font-size: 1.5em;
 }
