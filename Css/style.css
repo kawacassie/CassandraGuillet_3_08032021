@@ -19,15 +19,34 @@ h1 {
 
 #h2_menu {
   font-family: "Shrikhand", cursive;
+  font-size: 2em;
 }
 
 footer h2 {
   font-family: "Shrikhand", cursive;
 }
 
+.h3_menu {
+  text-transform: uppercase;
+  font-weight: normal;
+  padding-bottom: 0.5em;
+  width: 10%;
+  border-bottom: 6px solid #99e2d0;
+}
+
 a {
   text-decoration: none;
   color: black;
+}
+
+#header_menu {
+  height: 1000px;
+}
+
+#main_photo {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
 }
 
 nav {
@@ -43,11 +62,15 @@ nav {
   width: 95%;
   height: 20%;
   position: relative;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 1.5em;
+  box-shadow: 0.2em 0.2em 1em grey;
 }
 
 .photo {
   width: 100%;
-  height: 80%;
+  height: 70%;
 }
 
 .photo img {
@@ -69,7 +92,7 @@ nav {
 
 .legende {
   width: 100%;
-  height: 20%;
+  height: 30%;
   line-height: 0.8em;
   display: flex;
   justify-content: space-between;
@@ -78,6 +101,26 @@ nav {
 .coeur {
   align-self: flex-end;
   font-size: 1.5em;
+  padding-right: 0.5em;
+  padding-bottom: 1.5em;
+}
+
+.nom {
+  padding-left: 0.5em;
+}
+
+#titre {
+  display: flex;
+  justify-content: space-around;
+}
+
+#coeur_menu {
+  font-size: 1.5em;
+  align-self: center;
+}
+
+main {
+  padding: 1em;
 }
 
 footer {
