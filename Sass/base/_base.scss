@@ -19,10 +19,20 @@ h1{
 
 #h2_menu{
     font-family: $titles-font-family;
+    font-size: 2em;
 }
 
 footer h2{
     font-family: $titles-font-family;
+}
+
+.h3_menu{
+    text-transform: uppercase;
+    font-weight: normal;
+    padding-bottom: 0.5em;
+    width: 10%;
+    border-bottom: 6px solid $tertiary-color;
+    
 }
 
 a{
