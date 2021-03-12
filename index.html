@@ -12,28 +12,44 @@
     </head>
     <body>
         <div id="bloc_page">
-<!-- Linear gradient pour bouton ? -->
+
             <header>
                 <h1>ohmyfood</h1>
-                <p><i class="fas fa-map-marker-alt"></i> Paris, Belleville</p>
-                <h2>Réservez le menu qui vous convient</h2>
-                <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-                <a href="#restaurants" class="ancre">Explorer nos restaurants</a>
+                <p id="localisation"><i class="fas fa-map-marker-alt"></i> Paris, Belleville</p>
+                <section id="description">
+                    <h2>Réservez le menu qui vous convient</h2>
+                    <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                    <div id="button">
+                        <a href="#restaurants" class="ancre">Explorer nos restaurants</a>
+                    </div>
+                    </section>
             </header>
 
             <section>
                 <h2 class=>Fonctionnement</h2>
-                <ol>
-                    <li><i class="fas fa-mobile-alt"></i> Choisissez un restaurant</li>
-                    <li><i class="fas fa-list-ul"></i> Composez votre menu</li>
-                    <li><i class="fas fa-store"></i> Dégustez au restaurant</li>
-                </ol>
+                <ul>
+                    <li>
+                        <span class="li__number">1</span>
+                        <span class="li__logo"><i class="fas fa-mobile-alt"></i></span> 
+                        Choisissez un restaurant
+                    </li>
+                    <li>
+                        <span class="li__number">2</span>
+                        <span class="li__logo"><i class="fas fa-list-ul"></i></span> 
+                        Composez votre menu
+                    </li>
+                    <li>
+                        <span class="li__number">3</span>
+                        <span class="li__logo"><i class="fas fa-store"></i></span> 
+                        Dégustez au restaurant
+                    </li>
+                </ul>
             </section>
 
 
     <!-- Superposition logo coeur -->
             <nav>
-                <h2>Restaurants</h2>
+                <h2 id="restaurants">Restaurants</h2>
 
                 <article class="article_index">
                     <a href="Menus/menu_palette_du_gout.html">

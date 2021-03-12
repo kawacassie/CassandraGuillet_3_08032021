@@ -8,22 +8,25 @@ body {
 }
 
 .bloc_page {
-  width: 90%;
+  width: auto;
   margin: auto;
 }
 
 h1 {
   font-family: "Shrikhand", cursive;
   text-align: center;
+  font-weight: normal;
 }
 
 #h2_menu {
   font-family: "Shrikhand", cursive;
+  font-weight: normal;
   font-size: 2em;
 }
 
 footer h2 {
   font-family: "Shrikhand", cursive;
+  font-weight: normal;
 }
 
 .h3_menu {
@@ -37,6 +40,38 @@ footer h2 {
 a {
   text-decoration: none;
   color: black;
+}
+
+#button {
+  width: 55%;
+  background: linear-gradient(#ff79da, #9356dc);
+  padding: 0.8em;
+  text-align: center;
+  border-radius: 2em;
+  box-shadow: 0.2em 0.2em 0.5em grey;
+}
+#button a {
+  color: white;
+}
+
+#localisation {
+  text-align: center;
+  background-color: lightgray;
+}
+
+.fa-map-marker-alt {
+  padding: 1em;
+}
+
+#description {
+  background-color: #9356dc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 1.5em 1.5em 3em 1.5em;
+  margin-top: -1em;
 }
 
 #header_menu {
@@ -65,7 +100,7 @@ nav {
   overflow: hidden;
   background-color: white;
   border-radius: 1.5em;
-  box-shadow: 0.2em 0.2em 1em grey;
+  box-shadow: 0.5em 0.5em 1em grey;
 }
 
 .photo {
@@ -81,8 +116,8 @@ nav {
 
 .nouveau {
   position: absolute;
-  top: 30px;
-  left: 600px;
+  top: 5%;
+  left: 75%;
   width: 18%;
   padding: 0.5em;
   font-weight: bold;
@@ -107,6 +142,40 @@ nav {
 
 .nom {
   padding-left: 0.5em;
+}
+
+section {
+  padding-left: 1em;
+  margin-bottom: 5em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+section li {
+  position: relative;
+  padding: 1.5em;
+  margin: 1.5em 1.5em 1.5em 0;
+  font-size: 1.1em;
+  background-color: #e4d5f6;
+  border-radius: 1.5em;
+  box-shadow: 0.5em 0.5em 1em grey;
+}
+
+.li__number {
+  background-color: #9356dc;
+  color: white;
+  padding: 0.5em 0.7em 0.5em 0.7em;
+  border-radius: 50%;
+  position: absolute;
+  top: 25%;
+  left: -3%;
+}
+
+.li__logo {
+  padding: 0 1em 0 1em;
+  font-size: 1.2em;
 }
 
 #titre {
