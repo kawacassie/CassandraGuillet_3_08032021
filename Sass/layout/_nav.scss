@@ -1,5 +1,5 @@
 nav{
-    background-color: $primary-color;
+    background-color: $back-color;
     height: 3000px;
     padding: 1.5em;
     display: flex;
@@ -32,7 +32,7 @@ nav{
     left: 75%;
     width: 18%;
     padding: 0.5em;
-    font-weight: bold;
+    text-align: center;
     color: darken($tertiary-color, 40%);
     background-color: $tertiary-color;
 }
