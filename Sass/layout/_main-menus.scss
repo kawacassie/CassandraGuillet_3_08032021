@@ -10,4 +10,27 @@
 
 main{
     padding: 1em;
+    background-color: $back-color;
+    border-radius: 5em 5em 0 0;
+}
+
+.entrees, .plats, .desserts{
+    font-size: 1.2em;
+    margin: 1em 0 1em 0;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    line-height: 0.8em;
+    @include cards(white);
+}
+
+.valider{
+    align-self: center;
+}
+
+.prix{
+    align-self: flex-end;
+    padding-bottom: 1em;
+    font-weight: bold;
 }

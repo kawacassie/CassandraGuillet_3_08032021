@@ -12,7 +12,13 @@ section li{
     padding: 1.5em;
     margin: 1.5em 1.5em 1.5em 0;
     font-size: 1.1em;
-    @include cards(lighten($primary-color,30%));
+    @include cards($back-color);
+    &:hover, &:active{
+        @include cards(lighten($primary-color,30%));
+        .li__logo{
+            color: $primary-color;
+        }
+    }
 }
 
 .li__number{
