@@ -1,5 +1,17 @@
 @mixin cards($color) {
     background-color: $color;
     border-radius: 1.5em;
-    box-shadow: 0.2em 0.2em 1em grey;
+    box-shadow: 0.5em 0.5em 1em grey;
+}
+
+@mixin colored-button {
+    width: 55%;
+    background: linear-gradient($secondary-color, $primary-color);
+    padding: 0.8em;
+    text-align: center;
+    border-radius: 2em;
+    box-shadow: 0.2em 0.2em 0.5em grey;
+    a{
+        color: white;
+    }
 }
