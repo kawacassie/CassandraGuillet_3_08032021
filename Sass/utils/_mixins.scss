@@ -15,4 +15,11 @@
     a{
         color: white;
     }
+    @media (min-device-width: 768px) and (max-device-width: 991.98px){
+        width: 35%;
+
+    }
+    @media (min-device-width: 992px){
+        width: 20%;
+    }
 }

@@ -5,6 +5,9 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    @media (min-device-width: 768px){
+        height: 1500px;
+    }
 }
 
 .article_index{
@@ -13,6 +16,19 @@ nav{
     position: relative;
     overflow: hidden;
     @include cards(white);
+    @media (min-device-width: 992px){
+        width: 40%;
+        height: 30%;
+    }
+}
+
+#cards_menus{
+    @media (min-device-width: 992px){
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        height: 80%;
+    }
 }
 
 .photo{
