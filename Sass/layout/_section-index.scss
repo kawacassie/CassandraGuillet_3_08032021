@@ -1,4 +1,4 @@
-section{
+#fonctionnement{
     padding-left: 1em;
     margin-bottom: 5em;
 }
@@ -21,7 +21,7 @@ section li{
     font-size: 1.1em;
     @include cards($back-color);
     &:hover, &:active{
-        @include cards(lighten($primary-color,30%));
+        @include cards(lighten($primary-color,35%));
         .li__logo{
             color: $primary-color;
         }

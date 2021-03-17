@@ -50,9 +50,6 @@ footer h2{
     @media (min-device-width: 768px) and (max-device-width: 991.98px){
         width: 5%;
     }
-    @media (min-device-width: 992px){
-        width: 3%;
-    }
     
 }
 
@@ -61,6 +58,25 @@ a{
     color: black;
 }
 
-#button{
+.button{
     @include colored-button;
+    position: relative;
+    z-index: 1;
+    &:hover{
+        & .button__bg{
+            opacity: 1;
+        }
+    }
+    &__bg{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient($secondary-light, $primary-light);
+        border-radius: 2em;
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
+    }
 }

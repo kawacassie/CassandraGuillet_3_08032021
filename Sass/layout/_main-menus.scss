@@ -22,6 +22,7 @@ main{
     position: relative;
     z-index: 100;
     margin-top: -30%;
+    display: grid;
     @media (min-device-width: 768px) and (max-device-width: 991.98px){
         display: flex;
         flex-direction: column;
@@ -29,6 +30,29 @@ main{
     }
     @media (min-device-width: 992px){
         margin-top: -20%;
+    }
+}
+
+#menu{
+    @media (min-device-width: 768px) and (max-device-width: 991.98px){
+        width: 100%;
+    }
+    @media (min-device-width: 992px){
+        justify-content: space-around;
+    }
+}
+
+#menu-entrees, #menu-plats, #menu-desserts{
+    display: flex;
+    flex-direction: column;
+    @media (min-device-width: 992px){
+        width: 32%;
+    }
+}
+
+#menu{
+    @media (min-device-width: 992px){
+        display: flex;
     }
 }
 
@@ -42,7 +66,8 @@ main{
     line-height: 0.8em;
     @include cards(white);
     @media (min-device-width: 768px) and (max-device-width: 991.98px){
-        width: 60%;
+        width: 70%;
+        align-self: center;
     }
 }
 
@@ -54,4 +79,13 @@ main{
     align-self: flex-end;
     padding-bottom: 1em;
     font-weight: bold;
+}
+
+.commander{
+    width: 40%;
+    margin: 3em 0 5em 0;
+    justify-self: center;
+    @media (min-device-width: 992px){
+        width: 20%;
+    }
 }
