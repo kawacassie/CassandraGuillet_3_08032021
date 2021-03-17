@@ -152,7 +152,7 @@ a {
 
 nav {
   background-color: #f6f6f6;
-  height: 3400px;
+  height: 3300px;
   padding: 1.5em;
   display: flex;
   flex-direction: column;
@@ -160,7 +160,7 @@ nav {
 }
 @media (min-device-width: 768px) and (max-device-width: 991.98px) {
   nav {
-    height: 3200px;
+    height: 2500px;
   }
 }
 @media (min-device-width: 992px) {
@@ -170,37 +170,42 @@ nav {
 }
 
 .article_index {
-  height: 20%;
+  height: 17%;
   position: relative;
   overflow: hidden;
+  margin-bottom: 1em;
+  margin-top: 1em;
   background-color: white;
   border-radius: 1.5em;
   box-shadow: 0.5em 0.5em 1em #c3c3c3;
 }
 @media (min-device-width: 768px) and (max-device-width: 991.98px) {
   .article_index {
-    height: 15%;
+    height: 20%;
   }
 }
 @media (min-device-width: 992px) {
   .article_index {
     width: 40%;
-    height: 30%;
+    height: 35%;
   }
 }
 
 #cards_menus {
-  padding-left: 1em;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+}
+@media (min-device-width: 768px) and (max-device-width: 991.98px) {
+  #cards_menus {
+    height: 98%;
+  }
 }
 @media (min-device-width: 992px) {
   #cards_menus {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    height: 80%;
+    height: 90%;
   }
 }
 
@@ -233,12 +238,34 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+@media (min-device-width: 768px) {
+  .legende {
+    font-size: 1.2em;
+  }
+}
 
 .coeur {
   align-self: flex-end;
-  font-size: 1.5em;
+  font-size: 2em;
   padding-right: 0.5em;
   padding-bottom: 1.5em;
+  position: relative;
+  z-index: 1;
+}
+.coeur:hover .coeur_rempli {
+  opacity: 1;
+}
+
+.coeur_rempli {
+  position: absolute;
+  color: #9356dc;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 250ms;
 }
 
 .nom {
