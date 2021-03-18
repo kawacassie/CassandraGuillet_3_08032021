@@ -1,10 +1,17 @@
-section{
+#fonctionnement{
     padding-left: 1em;
     margin-bottom: 5em;
 }
 
-ul{
+section ul{
     list-style-type: none;
+    @media (min-device-width: 768px) and (max-device-width: 991.98px){
+        width: 60%;
+    }
+    @media (min-device-width: 992px){
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
 section li{
@@ -14,10 +21,13 @@ section li{
     font-size: 1.1em;
     @include cards($back-color);
     &:hover, &:active{
-        @include cards(lighten($primary-color,30%));
+        @include cards(lighten($primary-color,35%));
         .li__logo{
             color: $primary-color;
         }
+    }
+    @media (min-device-width: 992px){
+        width: 25%;
     }
 }
 

@@ -1,17 +1,72 @@
 #titre{
     display: flex;
     justify-content: space-around;
+    @media (min-device-width: 768px) and (max-device-width: 991.98px){
+        width: 80%;
+    }
+    @media (min-device-width: 992px){
+        width: 95%;
+        justify-content: space-between;
+    } 
 }
 
-#coeur_menu{
-    font-size: 1.5em;
+.coeur_menu{
+    font-size: 2.5em;
     align-self: center;
+    position: relative;
+    z-index: 1;
+    color: darken($back-color, 30%);
+    &:hover{
+        @include text-gradient;
+        & .coeur_menu_rempli{
+            opacity: 1;
+        }
+    }
+}
+
+.coeur_menu_rempli{
+    @include coeur_animation;
 }
 
 main{
     padding: 1em;
     background-color: $back-color;
     border-radius: 5em 5em 0 0;
+    position: relative;
+    z-index: 100;
+    margin-top: -30%;
+    display: grid;
+    @media (min-device-width: 768px) and (max-device-width: 991.98px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @media (min-device-width: 992px){
+        margin-top: -20%;
+    }
+}
+
+#menu{
+    @media (min-device-width: 768px) and (max-device-width: 991.98px){
+        width: 100%;
+    }
+    @media (min-device-width: 992px){
+        justify-content: space-around;
+    }
+}
+
+#menu-entrees, #menu-plats, #menu-desserts{
+    display: flex;
+    flex-direction: column;
+    @media (min-device-width: 992px){
+        width: 32%;
+    }
+}
+
+#menu{
+    @media (min-device-width: 992px){
+        display: flex;
+    }
 }
 
 .entrees, .plats, .desserts{
@@ -22,15 +77,31 @@ main{
     display: flex;
     justify-content: space-between;
     line-height: 0.8em;
+    overflow: hidden;
     @include cards(white);
+    @media (min-device-width: 768px) and (max-device-width: 991.98px){
+        width: 70%;
+        align-self: center;
+    }
 }
 
 .valider{
     align-self: center;
+    font-size: 1.5em;
+    display: none;
 }
 
 .prix{
     align-self: flex-end;
     padding-bottom: 1em;
     font-weight: bold;
+}
+
+.commander{
+    width: 40%;
+    margin: 3em 0 5em 0;
+    justify-self: center;
+    @media (min-device-width: 992px){
+        width: 20%;
+    }
 }

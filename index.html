@@ -13,19 +13,26 @@
     <body>
         <div id="bloc_page">
 
+            <div class="load">
+                <div class="circle_1"></div>
+                <div class="circle_2"></div>
+                <div class="circle_3"></div>
+            </div>
+
             <header>
                 <h1>ohmyfood</h1>
                 <p id="localisation"><i class="fas fa-map-marker-alt"></i> Paris, Belleville</p>
                 <section id="description">
                     <h2>Réservez le menu qui vous convient</h2>
                     <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-                    <div id="button">
+                    <div class="button">
                         <a href="#restaurants" class="ancre">Explorer nos restaurants</a>
+                        <div class="button__bg"></div>
                     </div>
                     </section>
             </header>
 
-            <section>
+            <section id="fonctionnement">
                 <h2>Fonctionnement</h2>
                 <ul>
                     <li>
@@ -46,84 +53,84 @@
                 </ul>
             </section>
 
-
-    <!-- Superposition logo coeur -->
             <nav>
                 <h2 id="restaurants">Restaurants</h2>
 
-                <article class="article_index">
-                    <a href="Menus/menu_palette_du_gout.html">
-                        <div class="photo">
-                            <img src="Images/restaurant_palette_du_gout.jpg" alt="Photo du restaurant La palette du goût">
-                        </div>
-                        <div class="nouveau">Nouveau</div>
-                        <div class="legende">
-                            <div class="nom">
-                                <h3>La palette du goût</h3>
-                                <p>Ménilmontant</p>
+                <section id="cards_menus">
+                    <article class="article_index">
+                        <a href="Menus/menu_palette_du_gout.html">
+                            <div class="photo">
+                                <img src="Images/restaurant_palette_du_gout.jpg" alt="Photo du restaurant La palette du goût">
                             </div>
-                            <div class="coeur">
-                                <i class="far fa-heart"></i>
-                                <i class="fas fa-heart"></i>
+                            <div class="nouveau">Nouveau</div>
+                            <div class="legende">
+                                <div class="nom">
+                                    <h3>La palette du goût</h3>
+                                    <p>Ménilmontant</p>
+                                </div>
+                                <div class="coeur">
+                                    <i class="far fa-heart"></i>
+                                    <div class="coeur_rempli"><i class="fas fa-heart"></i></div>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </article>
+                        </a>
+                    </article>
 
-                <article class="article_index">
-                    <a href="Menus/menu_note_enchantée.html">
-                        <div class="photo">
-                            <img src="Images/restaurant_note_enchantee.jpg" alt="Photo du restaurant La note enchantée">
-                        </div>
-                        <div class="nouveau">Nouveau</div>
-                        <div class="legende">
-                            <div class="nom">
-                                <h3>La note enchantée</h3>
-                                <p>Charonne</p>
+                    <article class="article_index">
+                        <a href="Menus/menu_note_enchantée.html">
+                            <div class="photo">
+                                <img src="Images/restaurant_note_enchantee.jpg" alt="Photo du restaurant La note enchantée">
                             </div>
-                            <div class="coeur">
-                                <i class="far fa-heart"></i>
-                                <i class="fas fa-heart"></i>
+                            <div class="nouveau">Nouveau</div>
+                            <div class="legende">
+                                <div class="nom">
+                                    <h3>La note enchantée</h3>
+                                    <p>Charonne</p>
+                                </div>
+                                <div class="coeur">
+                                    <i class="far fa-heart"></i>
+                                    <div class="coeur_rempli"><i class="fas fa-heart"></i></div>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </article>
+                        </a>
+                    </article>
 
-                <article class="article_index">
-                    <a href="Menus/menu_a_la_francaise.html">
-                        <div class="photo">
-                            <img src="Images/restaurant_a_la_francaise.jpg" alt="Photo du restaurant À la Française">
-                        </div>
-                        <div class="legende">
-                            <div class="nom">
-                                <h3>À la Française</h3>
-                                <p>Cité Rouge</p>
+                    <article class="article_index">
+                        <a href="Menus/menu_a_la_francaise.html">
+                            <div class="photo">
+                                <img src="Images/restaurant_a_la_francaise.jpg" alt="Photo du restaurant À la Française">
                             </div>
-                            <div class="coeur">
-                                <i class="far fa-heart"></i>
-                                <i class="fas fa-heart"></i>
+                            <div class="legende">
+                                <div class="nom">
+                                    <h3>À la Française</h3>
+                                    <p>Cité Rouge</p>
+                                </div>
+                                <div class="coeur">
+                                    <i class="far fa-heart"></i>
+                                    <div class="coeur_rempli"><i class="fas fa-heart"></i></div>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </article>
+                        </a>
+                    </article>
 
-                <article class="article_index">
-                    <a href="Menus/menu_delice_des_sens.html">
-                        <div class="photo">
-                            <img src="Images/restaurant_delice_des_sens.jpg" alt="Photo du restaurant Le délice des sens">
-                        </div>
-                        <div class="legende">
-                            <div class="nom">
-                                <h3>Le délice des sens</h3>
-                                <p>Folie-Méricourt</p>
+                    <article class="article_index">
+                        <a href="Menus/menu_delice_des_sens.html">
+                            <div class="photo">
+                                <img src="Images/restaurant_delice_des_sens.jpg" alt="Photo du restaurant Le délice des sens">
                             </div>
-                            <div class="coeur">
-                                <i class="far fa-heart"></i>
-                                <i class="fas fa-heart"></i>
+                            <div class="legende">
+                                <div class="nom">
+                                    <h3>Le délice des sens</h3>
+                                    <p>Folie-Méricourt</p>
+                                </div>
+                                <div class="coeur">
+                                    <i class="far fa-heart"></i>
+                                    <div class="coeur_rempli"><i class="fas fa-heart"></i></div>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </article>
+                        </a>
+                    </article>
+                </section>
 
             </nav>
 
