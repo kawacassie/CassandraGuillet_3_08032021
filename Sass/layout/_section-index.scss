@@ -1,0 +1,47 @@
+#fonctionnement{
+    padding-left: 1em;
+    margin-bottom: 5em;
+}
+
+section ul{
+    list-style-type: none;
+    @media (min-device-width: 768px) and (max-device-width: 991.98px){
+        width: 60%;
+    }
+    @media (min-device-width: 992px){
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+section li{
+    position: relative;
+    padding: 1.5em;
+    margin: 1.5em 1.5em 1.5em 0;
+    font-size: 1.1em;
+    @include cards($back-color);
+    &:hover, &:active{
+        @include cards(lighten($primary-color,35%));
+        .li__logo{
+            color: $primary-color;
+        }
+    }
+    @media (min-device-width: 992px){
+        width: 25%;
+    }
+}
+
+.li__number{
+    background-color: $primary-color;
+    color: white;
+    padding: 0.5em 0.7em 0.5em 0.7em;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    left: -3%;
+}
+
+.li__logo{
+    padding: 0 1em 0 1em;
+    font-size: 1.2em;
+}

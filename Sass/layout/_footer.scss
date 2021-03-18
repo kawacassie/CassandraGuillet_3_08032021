@@ -1,0 +1,12 @@
+footer{
+    background-color: darken($tertiary-color, 60%);
+    color: white;
+    padding: 1.5em;
+    ul{
+        list-style-type: none;
+        line-height: 1.5em;
+    }
+    a{
+        color: white;
+    }
+}
