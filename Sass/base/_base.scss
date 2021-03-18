@@ -19,6 +19,41 @@ body{
     margin: auto;
 }
 
+.load{
+    position: fixed;
+    left: 25%;
+    top: 50%;
+    width: 50%;
+    z-index: 500;
+    display: flex;
+    justify-content: space-evenly;
+    animation: loader 2s 2s both; 
+}
+
+.circle_1{
+    @include circle_animation($primary-color);
+}
+
+.circle_2{
+    @include circle_animation($secondary-color);
+}
+
+.circle_3{
+    @include circle_animation($tertiary-color);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
+
+@keyframes loader {
+    100% {
+        opacity: 0;
+        z-index: -10;
+    }
+}
+
 h1{
     font-family: $titles-font-family;
     text-align: center;
@@ -63,6 +98,7 @@ a{
     position: relative;
     z-index: 1;
     &:hover{
+        box-shadow: 0.5em 0.3em 0.7em darken($back-color,35%);
         & .button__bg{
             opacity: 1;
         }

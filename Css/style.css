@@ -23,6 +23,58 @@ body {
   margin: auto;
 }
 
+.load {
+  position: fixed;
+  left: 25%;
+  top: 50%;
+  width: 50%;
+  z-index: 500;
+  display: flex;
+  justify-content: space-evenly;
+  animation: loader 2s 2s both;
+}
+
+.circle_1 {
+  border: 10px solid #c9abee;
+  border-top: 10px solid #9356dc;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s cubic-bezier(0.6, 0.2, 0.4, 1) infinite;
+}
+
+.circle_2 {
+  border: 10px solid #ffdff6;
+  border-top: 10px solid #ff79da;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s cubic-bezier(0.6, 0.2, 0.4, 1) infinite;
+}
+
+.circle_3 {
+  border: 10px solid #e8f9f5;
+  border-top: 10px solid #99e2d0;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s cubic-bezier(0.6, 0.2, 0.4, 1) infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
 h1 {
   font-family: "Shrikhand", cursive;
   text-align: center;
@@ -88,6 +140,9 @@ a {
   .button {
     width: 20%;
   }
+}
+.button:hover {
+  box-shadow: 0.5em 0.3em 0.7em #9d9d9d;
 }
 .button:hover .button__bg {
   opacity: 1;
@@ -251,6 +306,12 @@ nav {
   padding-bottom: 1.5em;
   position: relative;
   z-index: 1;
+  color: #aaaaaa;
+}
+.coeur:hover {
+  background-image: linear-gradient(#ff79da, #9356dc);
+  background-clip: text;
+  color: transparent;
 }
 .coeur:hover .coeur_rempli {
   opacity: 1;
@@ -258,7 +319,9 @@ nav {
 
 .coeur_rempli {
   position: absolute;
-  color: #9356dc;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  background-clip: text;
+  color: transparent;
   top: 0;
   bottom: 0;
   left: 0;
@@ -346,9 +409,34 @@ section li:hover .li__logo, section li:active .li__logo {
   }
 }
 
-#coeur_menu {
-  font-size: 1.5em;
+.coeur_menu {
+  font-size: 2.5em;
   align-self: center;
+  position: relative;
+  z-index: 1;
+  color: #aaaaaa;
+}
+.coeur_menu:hover {
+  background-image: linear-gradient(#ff79da, #9356dc);
+  background-clip: text;
+  color: transparent;
+}
+.coeur_menu:hover .coeur_menu_rempli {
+  opacity: 1;
+}
+
+.coeur_menu_rempli {
+  position: absolute;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  background-clip: text;
+  color: transparent;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 250ms;
 }
 
 main {
@@ -408,6 +496,7 @@ main {
   display: flex;
   justify-content: space-between;
   line-height: 0.8em;
+  overflow: hidden;
   background-color: white;
   border-radius: 1.5em;
   box-shadow: 0.5em 0.5em 1em #c3c3c3;
@@ -421,6 +510,8 @@ main {
 
 .valider {
   align-self: center;
+  font-size: 1.5em;
+  display: none;
 }
 
 .prix {

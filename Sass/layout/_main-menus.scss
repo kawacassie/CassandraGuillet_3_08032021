@@ -10,9 +10,22 @@
     } 
 }
 
-#coeur_menu{
-    font-size: 1.5em;
+.coeur_menu{
+    font-size: 2.5em;
     align-self: center;
+    position: relative;
+    z-index: 1;
+    color: darken($back-color, 30%);
+    &:hover{
+        @include text-gradient;
+        & .coeur_menu_rempli{
+            opacity: 1;
+        }
+    }
+}
+
+.coeur_menu_rempli{
+    @include coeur_animation;
 }
 
 main{
@@ -64,6 +77,7 @@ main{
     display: flex;
     justify-content: space-between;
     line-height: 0.8em;
+    overflow: hidden;
     @include cards(white);
     @media (min-device-width: 768px) and (max-device-width: 991.98px){
         width: 70%;
@@ -73,6 +87,8 @@ main{
 
 .valider{
     align-self: center;
+    font-size: 1.5em;
+    display: none;
 }
 
 .prix{

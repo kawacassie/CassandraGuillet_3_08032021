@@ -83,7 +83,9 @@ nav{
     padding-bottom: 1.5em;
     position: relative;
     z-index: 1;
+    color: darken($back-color, 30%);
     &:hover{
+        @include text-gradient;
         & .coeur_rempli{
             opacity: 1;
         }
@@ -91,15 +93,7 @@ nav{
 }
 
 .coeur_rempli{
-    position: absolute;
-    color: $primary-color;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    opacity: 0;
-    transition: opacity 250ms;
+    @include coeur_animation;
 }
 
 .nom{
