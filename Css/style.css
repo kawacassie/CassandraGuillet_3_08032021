@@ -112,6 +112,10 @@ footer h2 {
   }
 }
 
+h4 {
+  margin-bottom: 0.2em;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -508,6 +512,26 @@ main {
   }
 }
 
+.entrees {
+  animation: fadein 3s 200ms both;
+}
+
+.plats {
+  animation: fadein 3s 1000ms both;
+}
+
+.desserts {
+  animation: fadein 3s 1800ms both;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .valider {
   align-self: center;
   font-size: 1.5em;
