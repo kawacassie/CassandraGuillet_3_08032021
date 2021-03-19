@@ -1,3 +1,4 @@
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -28,6 +29,7 @@
     opacity: 1;
   }
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -129,7 +131,6 @@ footer h2 {
 }
 
 h4 {
-  margin-bottom: 0.2em;
   padding-bottom: 0.2em;
 }
 
@@ -526,6 +527,7 @@ main {
     align-self: center;
   }
 }
+
 .entrees:hover .valider, .plats:hover .valider, .desserts:hover .valider {
   margin-right: 0rem;
   transition: margin-right 800ms ease-in-out;
