@@ -73,7 +73,6 @@ main{
     font-size: 1.2em;
     margin: 1em 0 1em 0;
     display: flex;
-    justify-content: space-between;
     line-height: 0.8em;
     overflow: hidden;
     cursor: pointer;
@@ -83,34 +82,32 @@ main{
         align-self: center;
     }
     &:hover .valider{
-        display: block;
+        margin-right: 0rem;
+        transition: margin-right 800ms ease-in-out;
     }
     &:hover .check{
-        animation: validation 1500ms ease-in-out;
+        animation: validation 1400ms ease-in-out;
     }
-    &:hover .description{
+    &:hover .description, .description>p, .description>h4{
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
     }
-}
 
-@keyframes validation{
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
+
+
 }
 
 .valider{
     align-self: center;
     font-size: 1.5em;
-    display: none;
+    margin: -1rem -13rem -1rem 1rem;
     color: white;
     background: $tertiary-color;
-    padding: 1.1em 1.2em 1.2em 1.2em;
+    padding: 1.3em 1.2em 1.3em 1.2em;
+    @media (min-device-width: 768px){
+        margin: -1rem -7rem -1rem 1rem;
+    }
 }
 
 /* ANIMATION APPARITION MENUS */
@@ -155,25 +152,22 @@ main{
     animation: fadein 3s 5600ms both;
 }
 
-@keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
 /* FIN ANIMATION APPARITION MENUS */
 
 .description{
+    flex: 1;
     padding-left: 1em;
 }
 
+.description>p{
+    padding-bottom: 0.2em;
+}
+
 .prix{
-    align-self: flex-end;
+    align-items: flex-end;
+    display: flex;
     padding-bottom: 1em;
-    padding-right: 1em;
+    padding-right: 0.5em;
     font-weight: bold;
 }
 
