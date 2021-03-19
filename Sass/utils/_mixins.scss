@@ -44,8 +44,8 @@
 }
 
 @mixin circle_animation($color) {
-    border: 10px solid lighten($color, 20%);
-    border-top: 10px solid $color; 
+    border: 10px solid lighten($color, 10%);
+    border-top: 10px solid darken($color, 20%); 
     border-radius: 50%;
     width: 120px;
     height: 120px;
