@@ -499,6 +499,7 @@ main {
   justify-content: space-between;
   line-height: 0.8em;
   overflow: hidden;
+  cursor: pointer;
   background-color: white;
   border-radius: 1.5em;
   box-shadow: 0.5em 0.5em 1em #c3c3c3;
@@ -512,12 +513,23 @@ main {
 .entrees:hover .valider, .plats:hover .valider, .desserts:hover .valider {
   display: block;
 }
+.entrees:hover .check, .plats:hover .check, .desserts:hover .check {
+  animation: validation 1500ms ease-in-out;
+}
 .entrees:hover .description, .plats:hover .description, .desserts:hover .description {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
+@keyframes validation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .valider {
   align-self: center;
   font-size: 1.5em;
