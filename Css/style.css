@@ -28,7 +28,7 @@ body {
   left: 25%;
   top: 50%;
   width: 50%;
-  z-index: 500;
+  z-index: 10;
   display: flex;
   justify-content: space-evenly;
   animation: loader 2s 2s both;
@@ -332,7 +332,7 @@ nav {
   right: 0;
   z-index: -1;
   opacity: 0;
-  transition: opacity 250ms;
+  transition: opacity 600ms ease-in-out;
 }
 
 .nom {
@@ -440,7 +440,7 @@ section li:hover .li__logo, section li:active .li__logo {
   right: 0;
   z-index: -1;
   opacity: 0;
-  transition: opacity 250ms;
+  transition: opacity 600ms ease-in-out;
 }
 
 main {
@@ -495,12 +495,11 @@ main {
 .entrees, .plats, .desserts {
   font-size: 1.2em;
   margin: 1em 0 1em 0;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
   display: flex;
   justify-content: space-between;
   line-height: 0.8em;
   overflow: hidden;
+  cursor: pointer;
   background-color: white;
   border-radius: 1.5em;
   box-shadow: 0.5em 0.5em 1em #c3c3c3;
@@ -511,17 +510,74 @@ main {
     align-self: center;
   }
 }
+.entrees:hover .valider, .plats:hover .valider, .desserts:hover .valider {
+  display: block;
+}
+.entrees:hover .check, .plats:hover .check, .desserts:hover .check {
+  animation: validation 1500ms ease-in-out;
+}
+.entrees:hover .description, .plats:hover .description, .desserts:hover .description {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 
-.entrees {
+@keyframes validation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.valider {
+  align-self: center;
+  font-size: 1.5em;
+  display: none;
+  color: white;
+  background: #99e2d0;
+  padding: 1.1em 1.2em 1.2em 1.2em;
+}
+
+/* ANIMATION APPARITION MENUS */
+.anim_1 {
   animation: fadein 3s 200ms both;
 }
 
-.plats {
-  animation: fadein 3s 1000ms both;
+.anim_2 {
+  animation: fadein 3s 800ms both;
 }
 
-.desserts {
-  animation: fadein 3s 1800ms both;
+.anim_3 {
+  animation: fadein 3s 1400ms both;
+}
+
+.anim_4 {
+  animation: fadein 3s 2000ms both;
+}
+
+.anim_5 {
+  animation: fadein 3s 2600ms both;
+}
+
+.anim_6 {
+  animation: fadein 3s 3200ms both;
+}
+
+.anim_7 {
+  animation: fadein 3s 3800ms both;
+}
+
+.anim_8 {
+  animation: fadein 3s 4400ms both;
+}
+
+.anim_9 {
+  animation: fadein 3s 5000ms both;
+}
+
+.anim_10 {
+  animation: fadein 3s 5600ms both;
 }
 
 @keyframes fadein {
@@ -532,15 +588,15 @@ main {
     opacity: 1;
   }
 }
-.valider {
-  align-self: center;
-  font-size: 1.5em;
-  display: none;
+/* FIN ANIMATION APPARITION MENUS */
+.description {
+  padding-left: 1em;
 }
 
 .prix {
   align-self: flex-end;
   padding-bottom: 1em;
+  padding-right: 1em;
   font-weight: bold;
 }
 
