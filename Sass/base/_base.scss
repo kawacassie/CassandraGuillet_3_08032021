@@ -24,7 +24,7 @@ body{
     left: 25%;
     top: 50%;
     width: 50%;
-    z-index: 500;
+    z-index: 10;
     display: flex;
     justify-content: space-evenly;
     animation: loader 2s 2s both; 
@@ -40,18 +40,6 @@ body{
 
 .circle_3{
     @include circle_animation($tertiary-color);
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg);}
-    100% { transform: rotate(360deg);}
-}
-
-@keyframes loader {
-    100% {
-        opacity: 0;
-        z-index: -10;
-    }
 }
 
 h1{
@@ -89,7 +77,7 @@ footer h2{
 }
 
 h4{
-    margin-bottom: 0.2em;
+    padding-bottom: 0.2em;
 }
 
 a{

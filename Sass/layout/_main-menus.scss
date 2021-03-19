@@ -72,49 +72,102 @@ main{
 .entrees, .plats, .desserts{
     font-size: 1.2em;
     margin: 1em 0 1em 0;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
     display: flex;
-    justify-content: space-between;
     line-height: 0.8em;
     overflow: hidden;
+    cursor: pointer;
     @include cards(white);
     @media (min-device-width: 768px) and (max-device-width: 991.98px){
         width: 70%;
         align-self: center;
     }
-}
-
-.entrees{
-        animation: fadein 3s 200ms both;
-}
-
-.plats{
-    animation: fadein 3s 1000ms both;
-}
-
-.desserts{
-    animation: fadein 3s 1800ms both;
-}
-
-@keyframes fadein {
-    from {
-        opacity: 0;
+    &:hover .valider{
+        margin-right: 0rem;
+        transition: margin-right 800ms ease-in-out;
     }
-    to {
-        opacity: 1;
+    &:hover .check{
+        animation: validation 1400ms ease-in-out;
     }
+    &:hover .description, .description>p, .description>h4{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+
+
 }
 
 .valider{
     align-self: center;
     font-size: 1.5em;
-    display: none;
+    margin: -1rem -13rem -1rem 1rem;
+    color: white;
+    background: $tertiary-color;
+    padding: 1.3em 1.2em 1.3em 1.2em;
+    @media (min-device-width: 768px){
+        margin: -1rem -7rem -1rem 1rem;
+    }
+}
+
+/* ANIMATION APPARITION MENUS */
+
+.anim_1{
+        animation: fadein 3s 200ms both;
+}
+
+.anim_2{
+    animation: fadein 3s 800ms both;
+}
+
+.anim_3{
+    animation: fadein 3s 1400ms both;
+}
+
+.anim_4{
+    animation: fadein 3s 2000ms both;
+}
+
+.anim_5{
+    animation: fadein 3s 2600ms both;
+}
+
+.anim_6{
+    animation: fadein 3s 3200ms both;
+}
+
+.anim_7{
+    animation: fadein 3s 3800ms both;
+}
+
+.anim_8{
+    animation: fadein 3s 4400ms both;
+}
+
+.anim_9{
+    animation: fadein 3s 5000ms both;
+}
+
+.anim_10{
+    animation: fadein 3s 5600ms both;
+}
+
+/* FIN ANIMATION APPARITION MENUS */
+
+.description{
+    flex: 1;
+    padding-left: 1em;
+}
+
+.description>p{
+    padding-bottom: 0.2em;
 }
 
 .prix{
-    align-self: flex-end;
+    align-items: flex-end;
+    display: flex;
     padding-bottom: 1em;
+    padding-right: 0.5em;
     font-weight: bold;
 }
 

@@ -1,3 +1,35 @@
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+@keyframes validation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -28,15 +60,15 @@ body {
   left: 25%;
   top: 50%;
   width: 50%;
-  z-index: 500;
+  z-index: 10;
   display: flex;
   justify-content: space-evenly;
   animation: loader 2s 2s both;
 }
 
 .circle_1 {
-  border: 10px solid #c9abee;
-  border-top: 10px solid #9356dc;
+  border: 10px solid #ae80e5;
+  border-top: 10px solid #6023a9;
   border-radius: 50%;
   width: 120px;
   height: 120px;
@@ -44,8 +76,8 @@ body {
 }
 
 .circle_2 {
-  border: 10px solid #ffdff6;
-  border-top: 10px solid #ff79da;
+  border: 10px solid #fface8;
+  border-top: 10px solid #ff13be;
   border-radius: 50%;
   width: 120px;
   height: 120px;
@@ -53,28 +85,14 @@ body {
 }
 
 .circle_3 {
-  border: 10px solid #e8f9f5;
-  border-top: 10px solid #99e2d0;
+  border: 10px solid #c1ede2;
+  border-top: 10px solid #4acbab;
   border-radius: 50%;
   width: 120px;
   height: 120px;
   animation: spin 2s cubic-bezier(0.6, 0.2, 0.4, 1) infinite;
 }
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes loader {
-  100% {
-    opacity: 0;
-    z-index: -10;
-  }
-}
 h1 {
   font-family: "Shrikhand", cursive;
   text-align: center;
@@ -113,7 +131,7 @@ footer h2 {
 }
 
 h4 {
-  margin-bottom: 0.2em;
+  padding-bottom: 0.2em;
 }
 
 a {
@@ -332,7 +350,7 @@ nav {
   right: 0;
   z-index: -1;
   opacity: 0;
-  transition: opacity 250ms;
+  transition: opacity 600ms ease-in-out;
 }
 
 .nom {
@@ -440,7 +458,7 @@ section li:hover .li__logo, section li:active .li__logo {
   right: 0;
   z-index: -1;
   opacity: 0;
-  transition: opacity 250ms;
+  transition: opacity 600ms ease-in-out;
 }
 
 main {
@@ -495,12 +513,10 @@ main {
 .entrees, .plats, .desserts {
   font-size: 1.2em;
   margin: 1em 0 1em 0;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
   display: flex;
-  justify-content: space-between;
   line-height: 0.8em;
   overflow: hidden;
+  cursor: pointer;
   background-color: white;
   border-radius: 1.5em;
   box-shadow: 0.5em 0.5em 1em #c3c3c3;
@@ -512,35 +528,89 @@ main {
   }
 }
 
-.entrees {
-  animation: fadein 3s 200ms both;
+.entrees:hover .valider, .plats:hover .valider, .desserts:hover .valider {
+  margin-right: 0rem;
+  transition: margin-right 800ms ease-in-out;
+}
+.entrees:hover .check, .plats:hover .check, .desserts:hover .check {
+  animation: validation 1400ms ease-in-out;
+}
+.entrees:hover .description, .entrees .description > p, .entrees .description > h4, .plats:hover .description, .plats .description > p, .plats .description > h4, .desserts:hover .description, .desserts .description > p, .desserts .description > h4 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
-.plats {
-  animation: fadein 3s 1000ms both;
-}
-
-.desserts {
-  animation: fadein 3s 1800ms both;
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .valider {
   align-self: center;
   font-size: 1.5em;
-  display: none;
+  margin: -1rem -13rem -1rem 1rem;
+  color: white;
+  background: #99e2d0;
+  padding: 1.3em 1.2em 1.3em 1.2em;
+}
+@media (min-device-width: 768px) {
+  .valider {
+    margin: -1rem -7rem -1rem 1rem;
+  }
+}
+
+/* ANIMATION APPARITION MENUS */
+.anim_1 {
+  animation: fadein 3s 200ms both;
+}
+
+.anim_2 {
+  animation: fadein 3s 800ms both;
+}
+
+.anim_3 {
+  animation: fadein 3s 1400ms both;
+}
+
+.anim_4 {
+  animation: fadein 3s 2000ms both;
+}
+
+.anim_5 {
+  animation: fadein 3s 2600ms both;
+}
+
+.anim_6 {
+  animation: fadein 3s 3200ms both;
+}
+
+.anim_7 {
+  animation: fadein 3s 3800ms both;
+}
+
+.anim_8 {
+  animation: fadein 3s 4400ms both;
+}
+
+.anim_9 {
+  animation: fadein 3s 5000ms both;
+}
+
+.anim_10 {
+  animation: fadein 3s 5600ms both;
+}
+
+/* FIN ANIMATION APPARITION MENUS */
+.description {
+  flex: 1;
+  padding-left: 1em;
+}
+
+.description > p {
+  padding-bottom: 0.2em;
 }
 
 .prix {
-  align-self: flex-end;
+  align-items: flex-end;
+  display: flex;
   padding-bottom: 1em;
+  padding-right: 0.5em;
   font-weight: bold;
 }
 
