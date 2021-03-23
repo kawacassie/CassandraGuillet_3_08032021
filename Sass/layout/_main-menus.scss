@@ -52,6 +52,8 @@ main{
     }
     @media (min-device-width: 992px){
         justify-content: space-around;
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
@@ -60,12 +62,6 @@ main{
     flex-direction: column;
     @media (min-device-width: 992px){
         width: 32%;
-    }
-}
-
-#menu{
-    @media (min-device-width: 992px){
-        display: flex;
     }
 }
 
@@ -104,7 +100,7 @@ main{
     margin: -1rem -13rem -1rem 1rem;
     color: white;
     background: $tertiary-color;
-    padding: 1.3em 1.2em 1.3em 1.2em;
+    padding: 1.4em 1.2em 1.4em 1.2em;
     @media (min-device-width: 768px){
         margin: -1rem -7rem -1rem 1rem;
     }

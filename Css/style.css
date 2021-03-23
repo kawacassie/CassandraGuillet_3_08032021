@@ -1,4 +1,3 @@
-
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -29,7 +28,6 @@
     opacity: 1;
   }
 }
-
 html {
   scroll-behavior: smooth;
 }
@@ -53,6 +51,16 @@ body {
 .bloc_page {
   width: auto;
   margin: auto;
+}
+
+.overlay {
+  position: fixed;
+  background-color: #f6f6f6;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  animation: loader 2s 2s both;
+  z-index: 100;
 }
 
 .load {
@@ -491,6 +499,8 @@ main {
 @media (min-device-width: 992px) {
   #menu {
     justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -501,12 +511,6 @@ main {
 @media (min-device-width: 992px) {
   #menu-entrees, #menu-plats, #menu-desserts {
     width: 32%;
-  }
-}
-
-@media (min-device-width: 992px) {
-  #menu {
-    display: flex;
   }
 }
 
@@ -527,7 +531,6 @@ main {
     align-self: center;
   }
 }
-
 .entrees:hover .valider, .plats:hover .valider, .desserts:hover .valider {
   margin-right: 0rem;
   transition: margin-right 800ms ease-in-out;
@@ -547,7 +550,7 @@ main {
   margin: -1rem -13rem -1rem 1rem;
   color: white;
   background: #99e2d0;
-  padding: 1.3em 1.2em 1.3em 1.2em;
+  padding: 1.4em 1.2em 1.4em 1.2em;
 }
 @media (min-device-width: 768px) {
   .valider {
