@@ -95,6 +95,10 @@ h1 {
   font-family: "Shrikhand", cursive;
   text-align: center;
   font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 #h2_menu {
@@ -184,6 +188,7 @@ a {
 #localisation {
   text-align: center;
   background-color: #e9e9e9;
+  margin-top: 0;
 }
 
 .fa-map-marker-alt {
@@ -246,11 +251,11 @@ nav {
 }
 
 .article_index {
-  height: 17%;
   position: relative;
   overflow: hidden;
   margin-bottom: 1em;
   margin-top: 1em;
+  height: 22%;
   background-color: white;
   border-radius: 1.5em;
   box-shadow: 0.5em 0.5em 1em #c3c3c3;
@@ -270,6 +275,7 @@ nav {
 #cards_menus {
   display: flex;
   flex-direction: column;
+  height: 95%;
 }
 @media (min-device-width: 768px) and (max-device-width: 991.98px) {
   #cards_menus {
@@ -490,6 +496,8 @@ main {
 @media (min-device-width: 992px) {
   #menu {
     justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -500,12 +508,6 @@ main {
 @media (min-device-width: 992px) {
   #menu-entrees, #menu-plats, #menu-desserts {
     width: 32%;
-  }
-}
-
-@media (min-device-width: 992px) {
-  #menu {
-    display: flex;
   }
 }
 
@@ -545,7 +547,7 @@ main {
   margin: -1rem -13rem -1rem 1rem;
   color: white;
   background: #99e2d0;
-  padding: 1.3em 1.2em 1.3em 1.2em;
+  padding: 1.4em 1.2em 1.4em 1.2em;
 }
 @media (min-device-width: 768px) {
   .valider {

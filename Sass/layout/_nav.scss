@@ -14,11 +14,11 @@ nav{
 }
 
 .article_index{
-    height: 17%;
     position: relative;
     overflow: hidden;
     margin-bottom: 1em;
     margin-top: 1em;
+    height: 22%;
     @include cards(white);
     @media (min-device-width:768px) and (max-device-width: 991.98px){
         height: 20%;
@@ -32,6 +32,7 @@ nav{
 #cards_menus{
     display: flex;
     flex-direction: column;
+    height: 95%;
     @media (min-device-width:768px) and (max-device-width: 991.98px){
         height: 98%;
     }
