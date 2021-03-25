@@ -15,11 +15,7 @@
     a{
         color: white;
     }
-    @media (min-device-width: 768px) and (max-device-width: 991.98px){
-        width: 35%;
-
-    }
-    @media (min-device-width: 992px){
+    @media (min-width: 1100px){
         width: 20%;
     }
 }
@@ -28,6 +24,7 @@
 @mixin text-gradient {
     background-image: linear-gradient($secondary-color, $primary-color);
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
 }
 
