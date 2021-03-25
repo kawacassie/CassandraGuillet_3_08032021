@@ -84,14 +84,12 @@ main{
     &:hover .check{
         animation: validation 1400ms ease-in-out;
     }
-    &:hover .description, .description>p, .description>h4{
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-    }
+}
 
-
-
+.description, .description>p, .description>h4{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .valider{

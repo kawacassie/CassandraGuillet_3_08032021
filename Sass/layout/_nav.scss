@@ -5,6 +5,9 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media (max-width: 767.98px){
+        height: 1500px;
+    }
     @media (min-device-width: 768px) and (max-device-width: 991.98px){
         height: 2500px;
     }
@@ -14,6 +17,7 @@ nav{
 }
 
 .article_index{
+    height: 22%;
     position: relative;
     overflow: hidden;
     margin-bottom: 1em;
