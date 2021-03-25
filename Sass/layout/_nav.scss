@@ -8,10 +8,7 @@ nav{
     @media (max-width: 767.98px){
         height: 1500px;
     }
-    @media (min-device-width: 768px) and (max-device-width: 991.98px){
-        height: 2500px;
-    }
-    @media (min-device-width: 992px){
+    @media (min-width: 992px){
         height: 1500px;
     }
 }
@@ -24,10 +21,7 @@ nav{
     margin-top: 1em;
     height: 22%;
     @include cards(white);
-    @media (min-device-width:768px) and (max-device-width: 991.98px){
-        height: 20%;
-    }
-    @media (min-device-width: 992px){
+    @media (min-width: 992px){
         width: 40%;
         height: 35%;
     }
@@ -37,10 +31,7 @@ nav{
     display: flex;
     flex-direction: column;
     height: 95%;
-    @media (min-device-width:768px) and (max-device-width: 991.98px){
-        height: 98%;
-    }
-    @media (min-device-width: 992px){
+    @media (min-width: 992px){
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
@@ -76,7 +67,7 @@ nav{
     line-height: 0.8em;
     display: flex;
     justify-content: space-between;
-    @media (min-device-width:768px){
+    @media (min-width: 992px){
         font-size: 1.2em;
     }
 }
