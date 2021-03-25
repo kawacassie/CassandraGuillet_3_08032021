@@ -9,10 +9,10 @@ body{
     @media (max-width: 767.98px){
         font-size: 1em;
     }
-    @media (min-device-width: 768px){
+    @media (min-width: 992px){
         font-size: 1em;
     }
-    @media (min-device-width: 992px){
+    @media (min-width: 992px){
         width: 95%;
         margin: auto;
     }
@@ -42,7 +42,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     animation: loader 2s 2s both;
-    @media (min-device-width: 768px){
+    @media (min-width: 768px){
         left: 15%;
         width: 70%;
     }
@@ -89,11 +89,8 @@ footer h2{
     padding-top: 1.5em;
     width: 10%;
     border-bottom: 6px solid $tertiary-color;
-    @media (min-device-width: 768px){
+    @media (min-width: 768px){
         border-bottom: 4px solid $tertiary-color;
-    }
-    @media (min-device-width: 768px) and (max-device-width: 991.98px){
-        width: 5%;
     }
     
 }
