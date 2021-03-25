@@ -5,6 +5,7 @@ html{
 body{
     font-family: $font-family;
     font-size: 2em;
+    min-width: 480px;
     @media (max-width: 767.98px){
         font-size: 1em;
     }
@@ -34,13 +35,17 @@ body{
 
 .load{
     position: fixed;
-    left: 25%;
+    left: 0;
     top: 50%;
-    width: 50%;
+    width: 95%;
     z-index: 10;
     display: flex;
     justify-content: space-evenly;
-    animation: loader 2s 2s both; 
+    animation: loader 2s 2s both;
+    @media (min-device-width: 768px){
+        left: 15%;
+        width: 70%;
+    }
 }
 
 .circle_1{
