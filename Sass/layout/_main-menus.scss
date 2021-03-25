@@ -35,7 +35,8 @@ main{
     position: relative;
     z-index: 100;
     margin-top: -30%;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     @media (min-device-width: 768px) and (max-device-width: 991.98px){
         display: flex;
         flex-direction: column;
@@ -171,11 +172,16 @@ main{
     font-weight: bold;
 }
 
+.contain_commander{
+    display: flex;
+    justify-content: center;
+    @media (min-device-width: 768px) and (max-device-width: 991.98px){
+        width: 100%;
+    }
+}
+
 .commander{
     width: 40%;
     margin: 3em 0 5em 0;
     justify-self: center;
-    @media (min-device-width: 992px){
-        width: 20%;
-    }
 }
