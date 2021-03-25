@@ -35,6 +35,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   font-size: 2em;
+  min-width: 480px;
 }
 @media (max-width: 767.98px) {
   body {
@@ -70,13 +71,19 @@ body {
 
 .load {
   position: fixed;
-  left: 25%;
+  left: 0;
   top: 50%;
-  width: 50%;
+  width: 95%;
   z-index: 10;
   display: flex;
   justify-content: space-evenly;
   animation: loader 2s 2s both;
+}
+@media (min-device-width: 768px) {
+  .load {
+    left: 15%;
+    width: 70%;
+  }
 }
 
 .circle_1 {
@@ -87,6 +94,12 @@ body {
   height: 120px;
   animation: spin 2s cubic-bezier(0.6, 0.2, 0.4, 1) infinite;
 }
+@media (max-width: 576px) {
+  .circle_1 {
+    width: 80px;
+    height: 80px;
+  }
+}
 
 .circle_2 {
   border: 10px solid #fface8;
@@ -96,6 +109,12 @@ body {
   height: 120px;
   animation: spin 2s cubic-bezier(0.6, 0.2, 0.4, 1) infinite;
 }
+@media (max-width: 576px) {
+  .circle_2 {
+    width: 80px;
+    height: 80px;
+  }
+}
 
 .circle_3 {
   border: 10px solid #c1ede2;
@@ -104,6 +123,12 @@ body {
   width: 120px;
   height: 120px;
   animation: spin 2s cubic-bezier(0.6, 0.2, 0.4, 1) infinite;
+}
+@media (max-width: 576px) {
+  .circle_3 {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 h1 {
@@ -592,6 +617,11 @@ main {
   background: #99e2d0;
   padding: 1.4em 1.2em 1.4em 1.2em;
 }
+@media (max-width: 767.98px) {
+  .valider {
+    margin: -1rem -7rem -1rem 1rem;
+  }
+}
 @media (min-device-width: 768px) {
   .valider {
     margin: -1rem -7rem -1rem 1rem;
@@ -675,10 +705,18 @@ footer {
 }
 footer ul {
   list-style-type: none;
-  line-height: 1.5em;
+  line-height: 1.6em;
 }
 footer a {
   color: white;
+}
+
+.fa-utensils {
+  padding-right: 0.8em;
+}
+
+.fa-hands-helping {
+  padding-right: 0.4em;
 }
 
 /*# sourceMappingURL=style.css.map */
