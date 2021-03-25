@@ -174,6 +174,7 @@ footer h2 {
 
 h4 {
   padding-bottom: 0.2em;
+  padding-top: 0.2em;
 }
 
 a {
@@ -195,12 +196,7 @@ a {
 .button a {
   color: white;
 }
-@media (min-device-width: 768px) and (max-device-width: 991.98px) {
-  .button {
-    width: 35%;
-  }
-}
-@media (min-device-width: 992px) {
+@media (min-width: 1100px) {
   .button {
     width: 20%;
   }
@@ -246,7 +242,7 @@ a {
   margin-top: -1em;
 }
 
-@media (min-device-width: 992px) and (max-device-width: 1137px) {
+@media (min-width: 992px) and (max-width: 1137px) {
   .explorer {
     width: 30%;
   }
@@ -260,12 +256,12 @@ a {
 #header_menu {
   height: 1000px;
 }
-@media (max-width: 768.98px) {
+@media (max-width: 767.98px) {
   #header_menu {
     height: 800px;
   }
 }
-@media (min-device-width: 768px) and (max-device-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
   #header_menu {
     height: 800px;
   }
@@ -400,6 +396,7 @@ nav {
 .coeur:hover {
   background-image: linear-gradient(#ff79da, #9356dc);
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
 }
 .coeur:hover .coeur_rempli {
@@ -410,6 +407,7 @@ nav {
   position: absolute;
   background-image: linear-gradient(#ff79da, #9356dc);
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
   top: 0;
   bottom: 0;
@@ -486,12 +484,12 @@ section li:hover .li__logo, section li:active .li__logo {
   display: flex;
   justify-content: space-around;
 }
-@media (min-device-width: 768px) and (max-device-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
   #titre {
-    width: 80%;
+    width: 90%;
   }
 }
-@media (min-device-width: 992px) {
+@media (min-width: 992px) {
   #titre {
     width: 95%;
     justify-content: space-between;
@@ -508,6 +506,7 @@ section li:hover .li__logo, section li:active .li__logo {
 .coeur_menu:hover {
   background-image: linear-gradient(#ff79da, #9356dc);
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
 }
 .coeur_menu:hover .coeur_menu_rempli {
@@ -518,6 +517,7 @@ section li:hover .li__logo, section li:active .li__logo {
   position: absolute;
   background-image: linear-gradient(#ff79da, #9356dc);
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
   top: 0;
   bottom: 0;
@@ -538,30 +538,30 @@ main {
   display: flex;
   flex-direction: column;
 }
-@media (min-device-width: 768px) and (max-device-width: 991.98px) {
+@media (max-width: 767.98px) {
+  main {
+    margin-top: -50%;
+  }
+}
+@media (min-width: 1200px) {
+  main {
+    margin-top: -20%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199.98px) {
   main {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
-@media (max-width: 768px) {
-  main {
-    margin-top: -50%;
-  }
-}
-@media (min-width: 1300px) {
-  main {
-    margin-top: -20%;
-  }
-}
 
-@media (min-device-width: 768px) and (max-device-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 1199.98px) {
   #menu {
     width: 100%;
   }
 }
-@media (min-device-width: 992px) {
+@media (min-width: 1200px) {
   #menu {
     justify-content: space-around;
     display: flex;
@@ -573,7 +573,7 @@ main {
   display: flex;
   flex-direction: column;
 }
-@media (min-device-width: 992px) {
+@media (min-width: 1200px) {
   #menu-entrees, #menu-plats, #menu-desserts {
     width: 32%;
   }
@@ -590,9 +590,9 @@ main {
   border-radius: 1.5em;
   box-shadow: 0.5em 0.5em 1em #c3c3c3;
 }
-@media (min-device-width: 768px) and (max-device-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 1199.98px) {
   .entrees, .plats, .desserts {
-    width: 70%;
+    width: 100%;
     align-self: center;
   }
 }
@@ -618,12 +618,12 @@ main {
   background: #99e2d0;
   padding: 1.4em 1.2em 1.4em 1.2em;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 567.98px) {
   .valider {
     margin: -1rem -7rem -1rem 1rem;
   }
 }
-@media (min-device-width: 768px) {
+@media (min-width: 1200px) {
   .valider {
     margin: -1rem -7rem -1rem 1rem;
   }
@@ -692,7 +692,7 @@ main {
   display: flex;
   justify-content: center;
 }
-@media (min-device-width: 768px) and (max-device-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 1199.98px) {
   .contain_commander {
     width: 100%;
   }
@@ -702,6 +702,11 @@ main {
   width: 40%;
   margin: 3em 0 5em 0;
   justify-self: center;
+}
+@media (min-width: 1200px) {
+  .commander {
+    width: 20%;
+  }
 }
 
 footer {
