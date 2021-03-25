@@ -41,7 +41,10 @@ main{
         flex-direction: column;
         align-items: center;
     }
-    @media (min-device-width: 992px){
+    @media (max-width: 768px){
+        margin-top: -50%;
+    }
+    @media (min-width: 1300px){
         margin-top: -20%;
     }
 }
