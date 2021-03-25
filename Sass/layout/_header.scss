@@ -1,6 +1,8 @@
 #localisation{
     text-align: center;
     background-color: darken($back-color, 5%);
+    margin-top: 0.1em;
+    border-top: solid 0.2em darken($back-color, 10%);
 }
 
 .fa-map-marker-alt{
@@ -16,6 +18,15 @@
     font-size: 1.2em;
     padding: 1em;
     margin-top: -1em;
+}
+
+.explorer{
+    @media (min-device-width: 992px) and (max-device-width: 1137px){
+        width: 30%;
+    }
+    @media (max-width: 767px){
+        width: 60%;
+    }
 }
 
 #header_menu{

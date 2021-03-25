@@ -36,6 +36,11 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 2em;
 }
+@media (max-width: 767.98px) {
+  body {
+    font-size: 1em;
+  }
+}
 @media (min-device-width: 768px) {
   body {
     font-size: 1em;
@@ -193,6 +198,8 @@ a {
 #localisation {
   text-align: center;
   background-color: #e9e9e9;
+  margin-top: 0.1em;
+  border-top: solid 0.2em #dddddd;
 }
 
 .fa-map-marker-alt {
@@ -208,6 +215,17 @@ a {
   font-size: 1.2em;
   padding: 1em;
   margin-top: -1em;
+}
+
+@media (min-device-width: 992px) and (max-device-width: 1137px) {
+  .explorer {
+    width: 30%;
+  }
+}
+@media (max-width: 767px) {
+  .explorer {
+    width: 60%;
+  }
 }
 
 #header_menu {
@@ -243,6 +261,11 @@ nav {
   flex-direction: column;
   justify-content: space-between;
 }
+@media (max-width: 767.98px) {
+  nav {
+    height: 1500px;
+  }
+}
 @media (min-device-width: 768px) and (max-device-width: 991.98px) {
   nav {
     height: 2500px;
@@ -255,7 +278,7 @@ nav {
 }
 
 .article_index {
-  height: 17%;
+  height: 22%;
   position: relative;
   overflow: hidden;
   margin-bottom: 1em;
@@ -279,6 +302,7 @@ nav {
 #cards_menus {
   display: flex;
   flex-direction: column;
+  height: 95%;
 }
 @media (min-device-width: 768px) and (max-device-width: 991.98px) {
   #cards_menus {
@@ -373,12 +397,12 @@ nav {
 section ul {
   list-style-type: none;
 }
-@media (min-device-width: 768px) and (max-device-width: 991.98px) {
+@media (min-device-width: 768px) and (max-device-width: 1139.98px) {
   section ul {
     width: 60%;
   }
 }
-@media (min-device-width: 992px) {
+@media (min-device-width: 1140px) {
   section ul {
     display: flex;
     justify-content: space-around;
@@ -402,7 +426,7 @@ section li:hover, section li:active {
 section li:hover .li__logo, section li:active .li__logo {
   color: #9356dc;
 }
-@media (min-device-width: 992px) {
+@media (min-device-width: 1140px) {
   section li {
     width: 25%;
   }
@@ -538,7 +562,8 @@ main {
 .entrees:hover .check, .plats:hover .check, .desserts:hover .check {
   animation: validation 1400ms ease-in-out;
 }
-.entrees:hover .description, .entrees .description > p, .entrees .description > h4, .plats:hover .description, .plats .description > p, .plats .description > h4, .desserts:hover .description, .desserts .description > p, .desserts .description > h4 {
+
+.description, .description > p, .description > h4 {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
