@@ -22,9 +22,10 @@
 
 
 @mixin text-gradient {
-    background-image: linear-gradient($secondary-color, $primary-color);
-    background-clip: text;
+    background-image: linear-gradient($secondary-color, $primary-color 50%);
     -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
     color: transparent;
 }
 
