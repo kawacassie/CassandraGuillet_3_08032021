@@ -374,9 +374,10 @@ nav {
   color: #aaaaaa;
 }
 .coeur:hover {
-  background-image: linear-gradient(#ff79da, #9356dc);
-  background-clip: text;
+  background-image: linear-gradient(#ff79da, #9356dc 50%);
   -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -ms-background-clip: text;
   color: transparent;
 }
 .coeur:hover .coeur_rempli {
@@ -385,9 +386,10 @@ nav {
 
 .coeur_rempli {
   position: absolute;
-  background-image: linear-gradient(#ff79da, #9356dc);
-  background-clip: text;
+  background-image: linear-gradient(#ff79da, #9356dc 50%);
   -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -ms-background-clip: text;
   color: transparent;
   top: 0;
   bottom: 0;
@@ -479,9 +481,10 @@ section li:hover .li__logo, section li:active .li__logo {
   color: #aaaaaa;
 }
 .coeur_menu:hover {
-  background-image: linear-gradient(#ff79da, #9356dc);
-  background-clip: text;
+  background-image: linear-gradient(#ff79da, #9356dc 50%);
   -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -ms-background-clip: text;
   color: transparent;
 }
 .coeur_menu:hover .coeur_menu_rempli {
@@ -490,9 +493,10 @@ section li:hover .li__logo, section li:active .li__logo {
 
 .coeur_menu_rempli {
   position: absolute;
-  background-image: linear-gradient(#ff79da, #9356dc);
-  background-clip: text;
+  background-image: linear-gradient(#ff79da, #9356dc 50%);
   -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -ms-background-clip: text;
   color: transparent;
   top: 0;
   bottom: 0;
