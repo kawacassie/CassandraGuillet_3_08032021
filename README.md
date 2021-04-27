@@ -1,10 +1,12 @@
-School Project OpenClassroom : Dynamisez une page web avec des animations CSS 
+# Dynamiser une page web avec des animations CSS #
+
+### Projet : Implémenter la version mobile d'un site de foodtech avec des animations CSS ### 
+
+Création d'un site mobile qui répertorie les menus de restaurants gastronomiques  
 
 Technologies utilisées : HTML, CSS, SCSS 
 
 Demande de développement sans Javascript ni framework
-
-Projet : Création d'un site mobile qui répertorie les menus de restaurants gastronomiques 
 
 Mise en oeuvre d'effets CSS graphiques avancés 
 
